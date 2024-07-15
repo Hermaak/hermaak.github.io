@@ -1,0 +1,99 @@
+.slider-container {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    width: 80%;
+    margin: 10px auto;
+    height: 300px;
+    position: relative;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.images-container {
+    position: absolute; 
+    width: 300%; 
+    height: 300px;
+    display: flex;
+    cursor: pointer; 
+    z-index: 2;
+}
+
+.image {
+    flex: 1;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    z-index: 6;
+    transition: transform .4s ease-in-out;
+    background-color: #fff;
+}
+
+.image span {
+    color: #fff;
+    background-color: #000;
+    border-bottom: 1px solid #444;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.image:nth-child(1) {
+    background-image: url(../assets/img/digital.png);
+} 
+
+.image:nth-child(2) {
+    background-image: url(../assets/img/bolada.png);
+} 
+
+.image:nth-child(3) {
+    background-image: url(../assets/img/aprova.png);
+} 
+
+/*  */
+.controller {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    color:  var(--myGreen);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.controller i {
+    font-size: 48px;
+    cursor: pointer;
+    opacity: .6;
+    transition: opacity .4s ease;
+    z-index: 2;
+}
+
+.controller i:hover {
+    opacity: 1;
+}
+
+.controller i:active {
+    opacity: .6;
+}
+
+.badge {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    z-index:3;
+    top: -7px;
+    right: 5px;
+    transform: rotate(0);
+    display: none;
+}
