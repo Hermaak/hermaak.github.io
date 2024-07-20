@@ -31,6 +31,70 @@
       "user": {
         "name": { "first": "", "last": "Edison" }
       }
+    },
+    {
+      "_id": "4",
+      "text": "A genialidade é 1% inspiração e 99% transpiração.",
+      "type": "",
+      "user": {
+        "name": { "first": "", "last": "Edison" }
+      }
+    },
+    {
+      "_id": "5",
+      "text": "Se quiser ter uma boa ideia, tenha uma porção de ideias.",
+      "type": "",
+      "user": {
+        "name": { "first": "", "last": "Edison" }
+      }
+    },
+    {
+      "_id": "6",
+      "text": "Um gênio é uma pessoa de talento que faz toda a lição de casa.",
+      "type": "",
+      "user": {
+        "name": { "first": "", "last": "Edison" }
+      }
+    },
+    {
+      "_id": "7",
+      "text": "Inquietude e descontentamento são as primeiras necessidades do progresso.",
+      "type": "",
+      "user": {
+        "name": { "first": "", "last": "Edison" }
+      }
+    },
+    {
+      "_id": "8",
+      "text": "Não me desencorajo, porque cada tentativa errada descartada é outro passo à frente.",
+      "type": "",
+      "user": {
+        "name": { "first": "", "last": "Edison" }
+      }
+    },
+    {
+      "_id": "9",
+      "text": "Se andarmos apenas por caminhos já traçados, chegaremos apenas aonde os outros chegaram.",
+      "type": "",
+      "user": {
+        "name": { "first": "", "last": "Graham Bell" }
+      }
+    },
+    {
+      "_id": "10",
+      "text": "Grandes descobertas e progressos invariavelmente envolvem a cooperação de várias mentes.",
+      "type": "",
+      "user": {
+        "name": { "first": "", "last": "Graham Bell" }
+      }
+    },
+    {
+      "_id": "11",
+      "text": "A preparação é a chave para todo e qualquer sucesso, antes de mais nada.",
+      "type": "",
+      "user": {
+        "name": { "first": "", "last": "Graham Bell" }
+      }
     }
   ]
 }

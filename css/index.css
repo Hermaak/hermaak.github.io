@@ -198,7 +198,7 @@ section .title strong {
     border: 1px solid #222;
     padding: 5px 10px;
     border-radius: 5px;
-    box-shadow: 1px 1px #fff;
+    box-shadow: -1px 1px #fff;
     font-family: mserrat_r;
     font-weight: 100;
 }
