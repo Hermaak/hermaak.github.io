@@ -1,0 +1,36 @@
+{
+  "all": [
+    {
+      "_id": "0",
+      "text": "Ouse fazer e o poder lhe será dado.",
+      "type": "",
+      "user": {
+        "name": { "first": "", "last": "Goethe" }
+      }
+    },
+    {
+      "_id": "1",
+      "text": "Se vi tão longe foi por ter me apoiado em ombros de gigantes.",
+      "type": "",
+      "user": {
+        "name": { "first": "", "last": "Newton" }
+      }
+    },
+    {
+      "_id": "2",
+      "text": "Uma mente que se abre à uma nova ideia jamais voltará ao seu estado original.",
+      "type": "",
+      "user": {
+        "name": { "first": "", "last": "Einstein" }
+      }
+    },
+    {
+      "_id": "3",
+      "text": "A oportunidade é perdida pela maioria das pessoas porque ela vem vestida de macacões e se parece com trabalho..",
+      "type": "",
+      "user": {
+        "name": { "first": "", "last": "Edison" }
+      }
+    }
+  ]
+}

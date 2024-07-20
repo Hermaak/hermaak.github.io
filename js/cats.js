@@ -1,7 +1,7 @@
 function getFacts() {
   let facts;
   $.ajax({
-    url: "js/data/facts.json",
+    url: "js/data/quotes.json",
     type: "GET",
     async: false,
     data: {},
