@@ -17,7 +17,7 @@
 
 .images-container {
     position: absolute; 
-    width: 400%; 
+    width: 200%; 
     height: 300px;
     display: flex;
     cursor: pointer; 
