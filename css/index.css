@@ -18,10 +18,16 @@
   font-family: rbt;
 }
 
+@font-face {
+  src: url(../assets/fonts/Roboto-Thin.ttf);
+  font-family: rbt-thin;
+}
+
 :root {
   --primary-color: #ff1744;
   --primary-opac: #ff17455e;
   --body-color: #141414;
+  --body-color: #0f0f0f;
   --primary-border: #444;
   --primary-black: #000;
   --radius-1: 2px;
@@ -204,7 +210,7 @@ section .title strong {
   border-radius: 10px;
   border-top-left-radius: 0;
   border-bottom-right-radius: 0;
-  font-weight: 100;
+  font-family: rbt-thin;
 }
 
 .section-intro {
@@ -257,10 +263,17 @@ section .title strong {
 }
 
 .intro .greetings strong {
-    font-size: 32px;
-    font-weight: 100;
-    text-transform: uppercase;
-    font-weight: lighter;
+  font-size: 32px;
+  font-weight: 100;
+  text-transform: uppercase;
+  font-family: rbt-thin;
+  opacity: 0;
+  animation: anmText 1.5s 4s ease-in forwards;
+}
+
+@keyframes anmText {
+  from{opacity: 0;}
+  to{opacity: 1;}
 }
 
 .intro h1 {
@@ -345,8 +358,8 @@ section .title strong {
 }
 
 #products .product p.desc {
-    color: #666;
-  }
+  color: #666;
+}
 
 /* About */
 .about {
@@ -452,14 +465,14 @@ footer .footer {
 }
 
 footer .footer-bottom {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-bottom p {
-    text-align: center;
-    color: #666;
+  text-align: center;
+  color: #666;
 }
 
 @media screen and (max-width: 600px) {
