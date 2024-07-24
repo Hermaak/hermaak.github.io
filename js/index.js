@@ -1,3 +1,9 @@
+// Config.
+const api_url =
+  window.location.protocol === "https:"
+    ? "https://api-master.onrender.com"
+    : "http://localhost:8000";
+
 $(document).ready(() => {
   $("header nav a:nth-child(1), .arrow").click(() => {
     $("body, html").animate({ scrollTop: innerHeight + 100 });
@@ -34,4 +40,38 @@ $(document).ready(() => {
       $(".gotop").css({ transform: "scale(0)" });
     }
   });
+});
+
+$("#form-subscribe").submit(async (e) => {
+  e.preventDefault();
+  const inp = document.getElementById("inp-email");
+  const sbmt = document.getElementById("inp-submit");
+
+  if (inp.disabled) {
+    return;
+  }
+
+  inp.disabled = true;
+  sbmt.disabled = true;
+
+  const email = new FormData(e.target).get("inp-email");
+  try {
+    const res = await fetch(api_url + "/ats/email-subscription", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ email }),
+    });
+
+    if (res.status === 200) {
+      alert("Obrigado pela sua subscrição.");
+    }
+  } catch (error) {
+    console.log(error);
+    alert("Houve um erro, tente novamente.");
+  }
+
+  inp.disabled = false;
+  sbmt.disabled = false;
 });

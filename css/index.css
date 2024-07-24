@@ -87,16 +87,20 @@ a {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--primary-opac);
+  background: var(--primary-color);
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--primary-color);
+  opacity: 1;
 }
 /*  */
 
 /* HEADER */
+
+header {
+  
+}
 
 .header {
   display: flex;
@@ -106,7 +110,7 @@ a {
 }
 
 .header * {
-  z-index: 2;
+  z-index: 10;
 }
 
 .logo a {
@@ -188,7 +192,8 @@ section {
   background-image: url(../assets/img/always-grey.png);
 }
 
-section > .about,
+section > 
+.about,
 .exp,
 .fak {
   width: 60%;
@@ -272,8 +277,12 @@ section .title strong {
 }
 
 @keyframes anmText {
-  from{opacity: 0;}
-  to{opacity: 1;}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .intro h1 {
@@ -436,15 +445,17 @@ footer .footer {
   display: none;
 }
 
-.footer .contact {
+.contact {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: fit-content;
+  width: 340px;
+  margin: 10px auto;
+  padding: 10px;
+  /* background-color: red; */
 }
 
 .footer .contact a {
-  flex: 1;
   padding: 10px;
   z-index: 2;
   display: flex;
@@ -452,16 +463,14 @@ footer .footer {
   justify-content: center;
   align-items: center;
   color: #888;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  background: #000;
+  margin: 10px 10px;
 }
 
 .footer .contact i {
-  font-size: 24px;
+  font-size: 14px;
   color: var(--primary-color);
-  margin: 20px 0;
-  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-  padding: 7px 12px;
-  background: var(--primary-opac);
-  display: block;
 }
 
 footer .footer-bottom {
@@ -471,8 +480,18 @@ footer .footer-bottom {
 }
 
 .footer-bottom p {
+  color: #444;
+}
+
+#text-subscribe {
   text-align: center;
-  color: #666;
+  color: #8888;
+  font-family: rbt-thin;
+  font-size: 18px;
+  text-transform: auto;
+  display: block;
+  margin-top: 20px;
+  padding-top: 20px;
 }
 
 @media screen and (max-width: 600px) {
@@ -480,7 +499,6 @@ footer .footer-bottom {
 
   .header {
     flex-direction: column;
-    background: #ddd;
   }
 
   .header nav {
@@ -507,9 +525,13 @@ footer .footer-bottom {
 
   .intro,
   .about,
-  .exp,
+  /* .exp, */
   .fak {
     width: 100%;
+  }
+
+  #section-about, #section-products {
+    height: unset;
   }
 
   .intro {
@@ -532,8 +554,10 @@ footer .footer-bottom {
   }
 
   .contact {
-    flex-direction: column;
-    height: 1000px;
+    /* flex-direction: column; */
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
   }
 
   .about {
@@ -558,6 +582,7 @@ button {
   color: #000;
   cursor: pointer;
   transition: all 0.5s ease;
+  z-index: 5;
 }
 
 button:hover {
@@ -567,4 +592,54 @@ button:hover {
 
 button i {
   font-size: 12px;
+}
+
+/* General */
+button {
+  cursor: pointer;
+}
+
+input,
+button {
+  outline: none;
+  border: none;
+}
+
+footer p {
+  text-align: center;
+  color: #fff;
+  margin: 10px auto;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin: 10px auto;
+  padding: 20px;
+}
+
+form input[type="email"] {
+  padding: 10px;
+  width: 540px;
+  background-color: #222;
+  color: #aaa;
+}
+
+form input[type="submit"] {
+  background-color: var(--primary-color);
+  color: #eee;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  opacity: .8;
+}
+
+form input[type="submit"]:active {
+  opacity: .6;
+}
+
+form input[type="submit"]:disabled {
+  background-color: #777;
+  color: #aaa;
 }

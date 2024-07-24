@@ -36,6 +36,7 @@ function setup() {
   slider.style("transform: rotate(-90deg)");
   slider.style("width: 100px");
   slider.style("height: 6px");
+  slider.style("z-index: 5");
 
   span = createSpan("Sia - Snowflake");
   span.position(width - 130, height * 0.5 + 100);
