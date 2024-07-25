@@ -4,7 +4,7 @@ class Ball {
     this.x = x;
     this.y = y;
     this.r = random(4, 8);
-    this.speed = 0.4;
+    this.speed = random(0.2, 0.4).toFixed(2);
     this.color = "#FF174455";
     this.sci = Math.round(Math.random() * (scientists.length - 1));
   }
@@ -34,9 +34,11 @@ class Ball {
   }
 
   reset() {
-    this.y = -this.r;
-    this.x = random(0, width);
-    this.r = random(2, 10);
-    this.sci = Math.round(Math.random() * (scientists.length - 1));
+    balls = balls.filter(({ id }) => id !== this.id);
+    // this.y = -this.r;
+    // this.x = random(0, width);
+    // this.r = random(2, 10);
+    // this.sci = Math.round(Math.random() * (scientists.length - 1));
+
   }
 }

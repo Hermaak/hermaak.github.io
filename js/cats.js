@@ -26,6 +26,6 @@ setInterval(() => {
   r = Math.round(Math.random() * (facts.all.length - 1));
   $(".intro p").text(facts.all[r].text);
   $(".intro p").append(
-    `<br>- <span style="color: ${myColor}; font-size: 16px;">${facts.all[r].user.name.first} ${facts.all[r].user.name.last}<span>`
+    `<br>~ <span style="color: ${myColor}; font-size: 16px;">${facts.all[r].user.name.first} ${facts.all[r].user.name.last}<span>`
   );
 }, 20000);

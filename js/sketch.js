@@ -81,7 +81,15 @@ function draw() {
       });
     } else {
       alert(`Pontuação: ${score} / ${num_balls}`);
-      end_game = true;
+      score = 0;
+      const p = prompt("Introduza [Y] para jogar novamente.");
+      if (p.toLowerCase() === "y") {
+        for (var i = 0; i < num_balls; i++) {
+          balls.push(new Ball(random(0, width), random(-500, -100), i));
+        }
+      } else {
+        end_game = true;
+      }
     }
   }
 
