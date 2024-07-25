@@ -19,6 +19,10 @@ let canvas,
   span,
   vol = 0.09;
 
+let score = 0;
+const num_balls = 20;
+let end_game = false;
+
 function preload() {
   sound = loadSound("assets/sound/sia_snowflake.mp3");
 }
@@ -48,18 +52,38 @@ function setup() {
 
   button.mousePressed(mp);
 
-  for (var i = 0; i < 20; i++) {
-    balls.push(new Ball(random(0, width), random(-500, -100)));
+  for (var i = 0; i < num_balls; i++) {
+    balls.push(new Ball(random(0, width), random(-500, -100), i));
   }
 }
 
 function draw() {
   background("#111");
+  push();
+  fill(255);
+  text(score + " / " + num_balls, mouseX, mouseY);
+  stroke(255, 0, 0);
+  noFill();
+  ellipse(mouseX, mouseY, 50, 50);
+  pop();
+
   vol = slider.value();
 
-  balls.forEach((ball) => {
-    ball.init();
-  });
+  if (!end_game) {
+    if (balls.length !== 0) {
+      balls.forEach((ball) => {
+        const d = dist(ball.x, ball.y, mouseX, mouseY);
+        if (d < 20) {
+          balls = balls.filter(({ id }) => id !== ball.id);
+          score++;
+        }
+        ball.init();
+      });
+    } else {
+      alert(`Pontuação: ${score} / ${num_balls}`);
+      end_game = true;
+    }
+  }
 
   sound.setVolume(vol);
 

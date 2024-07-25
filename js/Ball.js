@@ -1,9 +1,10 @@
 class Ball {
-  constructor(x, y) {
+  constructor(x, y, id) {
+    this.id = id;
     this.x = x;
     this.y = y;
     this.r = random(4, 8);
-    this.speed = 0.1;
+    this.speed = 0.4;
     this.color = "#FF174455";
     this.sci = Math.round(Math.random() * (scientists.length - 1));
   }
