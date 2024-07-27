@@ -236,11 +236,13 @@ section .title strong {
   z-index: 2;
   display: flex;
   flex-direction: column;
-  background: url(../assets/img/intro.svg) no-repeat center center/contain;
+  /* background: url(../assets/img/intro.svg) no-repeat center center/contain; */
 }
 
 .intro * {
   z-index: 2;
+  pointer-events: none;
+  user-select: none;
 }
 
 .intro-left-right {

@@ -19,12 +19,17 @@ let canvas,
   span,
   vol = 0.09;
 
+  let intro;
+
 let score = 0;
-const num_balls = 20;
-let end_game = false;
+const num_balls = 40;
+let end_game = true;
+
+let player;
 
 function preload() {
   sound = loadSound("assets/sound/sia_snowflake.mp3");
+  intro = loadImage('assets/img/intro.svg');
 }
 
 function setup() {
@@ -55,17 +60,34 @@ function setup() {
   for (var i = 0; i < num_balls; i++) {
     balls.push(new Ball(random(0, width), random(-500, -100), i));
   }
+
+  player = new Player(width * .5, height - height * .2);
 }
 
 function draw() {
   background("#111");
-  push();
-  fill(255);
-  text(score + " / " + num_balls, mouseX, mouseY);
-  stroke(255, 0, 0);
-  noFill();
-  ellipse(mouseX, mouseY, 50, 50);
-  pop();
+  player.show();
+  // push();
+  // fill(255);
+  // text(score + " / " + num_balls, mouseX, mouseY);
+  // stroke(255, 0, 0);
+  // noFill();
+  // ellipse(mouseX, mouseY, 50, 50);
+  // pop();
+  imageMode(CENTER);
+  image(intro, width * .5, height * .5, intro.width / 2,  intro.height / 2)
+
+
+  balls.forEach((ball) => {
+    ball.init();
+    const d = dist(ball.x, ball.y, player.x, player.y)
+    if(d < 10) {
+      player.isDamaged = true;
+      setTimeout(() => {
+        player.isDamaged = false;
+      }, 100);
+    }
+  });
 
   vol = slider.value();
 
@@ -77,7 +99,6 @@ function draw() {
           balls = balls.filter(({ id }) => id !== ball.id);
           score++;
         }
-        ball.init();
       });
     } else {
       alert(`Pontuação: ${score} / ${num_balls}`);
@@ -95,9 +116,23 @@ function draw() {
 
   sound.setVolume(vol);
 
-  fill("#FF1744");
+  fill("#ff0000");
   textSize(16);
   text(round(vol * 100) + "%", width - 95, height * 0.5 - 200);
+
+  if(keyIsPressed) {
+    if(key === 'ArrowLeft') {
+      player.x -= player.speed;
+    }
+  
+    if(key === 'ArrowRight') {
+      player.x += player.speed;
+    }
+  }
+}
+
+function keyIsPressed(key) {
+  
 }
 
 function mp() {
@@ -108,4 +143,8 @@ function mp() {
     sound.stop();
     button.html("<i class='la la-play'></i>");
   }
+}
+
+function mouseDragged() {
+  balls.push(new Ball(mouseX, mouseY, new Date()));
 }
