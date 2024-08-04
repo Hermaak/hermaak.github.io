@@ -13,9 +13,12 @@ class Ball {
   }
 
   init() {
+    push()
+    ellipseMode(CENTER)
     fill(this.color.x, this.color.y, this.color.z);
     noStroke();
     ellipse(this.x, this.y, this.r, this.r);
+    pop();
     // line(this.x, this.y, this.x + 50, this.y - 150);
     // line(this.x + 50, this.y - 150, this.x + 100, this.y - 150);
     // stroke(this.color);
