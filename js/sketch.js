@@ -85,7 +85,7 @@ function draw() {
       player.isDamaged = true;
       setTimeout(() => {
         player.isDamaged = false;
-      }, 100);
+      }, 1000);
     }
   });
 
