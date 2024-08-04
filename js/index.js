@@ -54,7 +54,7 @@ $("#form-subscribe").submit(async (e) => {
   inp.disabled = true;
   sbmt.disabled = true;
 
-  const email = (new FormData(e.target)).get("inp-email");
+  const email = inp.value;
   try {
     const res = await fetch(api_url + "/ats/email-subscription", {
       method: "POST",
