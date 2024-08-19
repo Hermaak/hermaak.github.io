@@ -22,7 +22,7 @@ let canvas,
   let intro;
 
 let score = 0;
-const num_balls = 40;
+const num_balls = 10;
 let end_game = true;
 
 let player;
@@ -66,7 +66,7 @@ function setup() {
 
 function draw() {
   background("#111");
-  player.show();
+  // player.show();
   // push();
   // fill(255);
   // text(score + " / " + num_balls, mouseX, mouseY);
@@ -91,28 +91,28 @@ function draw() {
 
   vol = slider.value();
 
-  if (!end_game) {
-    if (balls.length !== 0) {
-      balls.forEach((ball) => {
-        const d = dist(ball.x, ball.y, mouseX, mouseY);
-        if (d < 20) {
-          balls = balls.filter(({ id }) => id !== ball.id);
-          score++;
-        }
-      });
-    } else {
-      alert(`Pontuação: ${score} / ${num_balls}`);
-      score = 0;
-      const p = prompt("Introduza [Y] para jogar novamente.");
-      if (p.toLowerCase() === "y") {
-        for (var i = 0; i < num_balls; i++) {
-          balls.push(new Ball(random(0, width), random(-500, -100), i));
-        }
-      } else {
-        end_game = true;
-      }
-    }
-  }
+  // if (!end_game) {
+  //   if (balls.length !== 0) {
+  //     balls.forEach((ball) => {
+  //       const d = dist(ball.x, ball.y, mouseX, mouseY);
+  //       if (d < 20) {
+  //         balls = balls.filter(({ id }) => id !== ball.id);
+  //         score++;
+  //       }
+  //     });
+  //   } else {
+  //     alert(`Pontuação: ${score} / ${num_balls}`);
+  //     score = 0;
+  //     const p = prompt("Introduza [Y] para jogar novamente.");
+  //     if (p.toLowerCase() === "y") {
+  //       for (var i = 0; i < num_balls; i++) {
+  //         balls.push(new Ball(random(0, width), random(-500, -100), i));
+  //       }
+  //     } else {
+  //       end_game = true;
+  //     }
+  //   }
+  // }
 
   sound.setVolume(vol);
 
@@ -120,19 +120,15 @@ function draw() {
   textSize(16);
   text(round(vol * 100) + "%", width - 95, height * 0.5 - 200);
 
-  if(keyIsPressed) {
-    if(key === 'ArrowLeft') {
-      player.x -= player.speed;
-    }
+  // if(keyIsPressed) {
+  //   if(key === 'ArrowLeft') {
+  //     player.x -= player.speed;
+  //   }
   
-    if(key === 'ArrowRight') {
-      player.x += player.speed;
-    }
-  }
-}
-
-function keyIsPressed(key) {
-  
+  //   if(key === 'ArrowRight') {
+  //     player.x += player.speed;
+  //   }
+  // }
 }
 
 function mp() {

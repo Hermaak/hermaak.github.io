@@ -625,12 +625,14 @@ form input[type="email"] {
   width: 540px;
   background-color: #222;
   color: #aaa;
+  border-bottom-left-radius: 7px;
 }
 
 form input[type="submit"] {
   background-color: var(--primary-color);
   color: #eee;
   cursor: pointer;
+  border-top-right-radius: 7px;
 }
 
 form input[type="submit"]:hover {
