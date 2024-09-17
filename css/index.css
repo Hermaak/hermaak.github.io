@@ -24,7 +24,8 @@
 }
 
 :root {
-  --primary-color: #ff1744;
+  /* --primary-color: #ff1744; */
+  --primary-color: #9f34c0;
   --primary-opac: #ff17455e;
   --body-color: #141414;
   --body-color: #0f0f0f;
@@ -122,20 +123,6 @@ header {
 
 .logo .icon-container {
   padding: 2px;
-  width: 40px;
-  height: 40px;
-  background: url(../assets/img/logo-new-o.png) no-repeat center center/cover;
-}
-
-.logo a .icon {
-  font-size: 16px;
-  font-weight: bolder;
-  border-radius: 0px;
-  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-  padding: 9px;
-  background: var(--primary-color);
-  display: block;
-  display: none;
 }
 
 .logo a span {
@@ -212,7 +199,7 @@ section .title strong {
   font-size: 16px;
   border: 1px solid #222;
   padding: 5px 10px;
-  border-radius: 10px;
+  border-radius: 5px;
   border-top-left-radius: 0;
   border-bottom-right-radius: 0;
   font-family: rbt-thin;
@@ -333,6 +320,7 @@ section .title strong {
   justify-content: center;
   align-items: center;
   background: #000000ab;
+  z-index: 10;
 }
 
 .intro .arrow i {
@@ -625,14 +613,16 @@ form input[type="email"] {
   width: 540px;
   background-color: #222;
   color: #aaa;
-  border-bottom-left-radius: 7px;
+  /* border-bottom-left-radius:2px;
+  border-top-left-radius: 2px; */
 }
 
 form input[type="submit"] {
   background-color: var(--primary-color);
   color: #eee;
   cursor: pointer;
-  border-top-right-radius: 7px;
+  /* border-bottom-right-radius: 2px;
+  border-top-right-radius: 2px; */
 }
 
 form input[type="submit"]:hover {

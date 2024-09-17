@@ -41,7 +41,7 @@ function setup() {
   slider = createSlider(0, 1, vol, 0.01);
   slider.position(width - 135, height * 0.5 - 100);
   slider.style("cursor: pointer");
-  slider.style("accent-color: #FF1744");
+  slider.style("accent-color: #9f34c0");
   slider.style("transform: rotate(-90deg)");
   slider.style("width: 100px");
   slider.style("height: 6px");
@@ -49,7 +49,7 @@ function setup() {
 
   span = createSpan("Sia - Snowflake");
   span.position(width - 130, height * 0.5 + 100);
-  span.style("color: #FF1744");
+  span.style("color: #9f34c0");
   span.style("transform: rotate(90deg)");
 
   sound.setLoop(true);
@@ -116,7 +116,7 @@ function draw() {
 
   sound.setVolume(vol);
 
-  fill("#ff0000");
+  fill("#9f34c0");
   textSize(16);
   text(round(vol * 100) + "%", width - 95, height * 0.5 - 200);
 

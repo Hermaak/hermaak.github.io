@@ -12,7 +12,7 @@ function getFacts() {
   return facts;
 }
 
-const myColor = "#FF1744";
+const myColor = "#9f34c0";
 
 facts = getFacts();
 
