@@ -262,7 +262,7 @@ section .title strong {
   text-transform: uppercase;
   font-family: rbt-thin;
   opacity: 0;
-  animation: anmText 1.5s 4s ease-in forwards;
+  animation: anmText 1s 2s ease-in forwards;
 }
 
 @keyframes anmText {
