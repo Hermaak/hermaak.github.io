@@ -3,14 +3,14 @@ class Ball {
     this.id = id;
     this.x = x;
     this.y = y;
-    this.r = random(4, 12);
-    this.speed = random(0.5, 1.5).toFixed(2);
+    this.r = random(5, 12);
+    this.speed = random(0.1, 0.5).toFixed(2);
     this.color = new p5.Vector(parseInt(random(255)), parseInt(random(255)), parseInt(random(255)));
   }
 
   init() {
     push()
-    ellipseMode(CENTER)
+    ellipseMode(CENTER);
     fill(this.color.x, this.color.y, this.color.z);
     noStroke();
     ellipse(this.x, this.y, this.r, this.r);

@@ -402,6 +402,7 @@ section .title strong {
   transition: 0.5s all ease;
   box-shadow: 0 0 4px 8px #111;
   transform: scale(0);
+  color: #fff;
 }
 
 .gotop i {
@@ -438,10 +439,13 @@ footer .footer {
 .contact {
   display: flex;
   justify-content: space-around;
+  flex-direction: column;
   align-items: center;
-  width: 340px;
-  margin: 10px auto;
-  padding: 10px;
+  /* margin: 10px auto; */
+  padding: 10px 20px;
+  position: fixed;
+  top: 100px;
+  left: 0;
   /* background-color: red; */
 }
 
@@ -453,9 +457,15 @@ footer .footer {
   justify-content: center;
   align-items: center;
   color: #888;
-  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  /* clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%); */
   background: #000;
-  margin: 10px 10px;
+  /* margin: 10px 10px; */
+  margin-bottom: 5px;
+  border-radius: 10px;
+}
+
+.contact a:hover {
+  transform: scale(1.1);
 }
 
 .footer .contact i {
@@ -604,23 +614,30 @@ footer p {
 form {
   display: flex;
   justify-content: center;
-  margin: 10px auto;
-  padding: 20px;
+  margin: 10px auto 10px auto;
+  /* border: 1px solid red; */
+  align-items: center;
+  width: fit-content;
+  height: 120px;
+  position: relative;
 }
 
 form input[type="email"] {
-  padding: 10px;
+  padding: 20px 120px 20px 30px;
   width: 540px;
   background-color: #222;
   color: #aaa;
-  /* border-bottom-left-radius:2px;
-  border-top-left-radius: 2px; */
+  border-radius: 25px;
 }
 
 form input[type="submit"] {
   background-color: var(--primary-color);
   color: #eee;
   cursor: pointer;
+  position: absolute;
+  border-radius: 25px;
+  right: 10px;
+  padding: 10px;
   /* border-bottom-right-radius: 2px;
   border-top-right-radius: 2px; */
 }

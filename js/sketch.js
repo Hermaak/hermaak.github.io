@@ -4,16 +4,11 @@ let balls = [];
 let canvas,
   button,
   slider,
-  span,
-  vol = 0.09;
+  span;
 
 let intro;
 
-let score = 0;
-const num_balls = 10;
-let end_game = true;
-
-let player;
+const num_balls = 5;
 
 function preload() {
   intro = loadImage("assets/img/intro.svg");
@@ -33,11 +28,11 @@ function draw() {
   imageMode(CENTER);
   image(intro, width * 0.5, height * 0.5, intro.width / 2, intro.height / 2);
 
-  balls.forEach((ball) => {
-    ball.init();
-  });
+  // balls.forEach((ball) => {
+  //   ball.init();
+  // });
 }
 
-function mouseDragged() {
-  balls.push(new Ball(mouseX, mouseY, new Date()));
-}
+// function mouseDragged() {
+//   balls.push(new Ball(mouseX, mouseY, new Date()));
+// }
