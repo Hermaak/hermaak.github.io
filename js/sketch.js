@@ -24,7 +24,7 @@ function setup() {
 }
 
 function draw() {
-  background("#111");
+  background("#fff");
   imageMode(CENTER);
   image(intro, width * 0.5, height * 0.5, intro.width / 2, intro.height / 2);
 
