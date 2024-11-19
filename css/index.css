@@ -25,7 +25,8 @@
 
 :root {
   /* --primary-color: #ff1744; */
-  --primary-color: #9f34c0;
+  /* --primary-color: #9f34c0; */
+  --primary-color: #003366;
   --primary-opac: #ff17455e;
   --body-color: #141414;
   --body-color: #0f0f0f;
@@ -79,7 +80,7 @@ a {
 
 /*  */
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -106,14 +107,13 @@ header {
 }
 
 .header {
+  height: 40px;
   display: flex;
   right: 0;
   left: 0;
   justify-content: space-between;
   align-items: center;
   padding: 5px 10px;
-  border-bottom: 1px solid #ddd;
-  box-shadow: 0 1px 2px #eee;
  
 }
 
