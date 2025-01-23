@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI</title>
+    <link
+      rel="shortcut icon"
+      href="../../assets/img/robot-solid.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../../css/ai/main.css" />
+  </head>
+  <body>
+    <header>
+      <h1></h1>
+    </header>
+    <main>
+      <div id="chat"></div>
+      <form id="form-chat">
+        <input
+          type="text"
+          name="inp-text"
+          id="inp-text"
+          placeholder="Escreva alguma coisa..."
+          autofocus
+          required
+        />
+        <button type="submit">Enviar</button>
+      </form>
+    </main>
+    <footer>
+      <div class="footer-bottom">
+        <p>
+          <a href="https://advancedtechspace.com">
+            <img src="../../assets/img/logo.png" width="20" alt="logo" />
+            <span>advancedtechspace.com</span>
+          </a>
+        </p>
+      </div>
+    </footer>
+    <script src="../../libraries/js/jquery-3.6.0.min.js"></script>
+    <script src="../../js/index.js"></script>
+    <script>
+      let chat = new String();
+      document
+        .getElementById("form-chat")
+        .addEventListener("submit", async (e) => {
+          e.preventDefault();
+          const text = new FormData(e.target).get("inp-text");
+
+          try {
+            const res = await fetch(api_url + "/chatbot/chat", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+                bot: "cronus",
+              },
+              body: JSON.stringify({ text }),
+            });
+
+            if (res.status === 200) {
+              const data = await res.json();
+              console.log(data);
+            }
+          } catch (error) {
+            console.log(error);
+          }
+
+          return;
+
+          chat += `<div class="me">${text}</div>`;
+          chat += `<div class="bot">Olá, como posso ajudar?</div>`;
+          document.getElementById("chat").innerHTML = chat;
+          e.target.reset();
+        });
+    </script>
+  </body>
+</html>
