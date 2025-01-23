@@ -1,3 +1,4 @@
+//
 // Config.
 const api_url =
   window.location.protocol === "https:"
