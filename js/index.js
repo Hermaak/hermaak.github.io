@@ -36,10 +36,6 @@ $(document).ready(() => {
 
   $(window).scroll((e) => {
     if (scrollY > 60) {
-<<<<<<< HEAD
-=======
-      // $(".header").css({ "box-shadow": "0 0 1px 4px #ccc"});
->>>>>>> 3d1a88b6edc8b1c3fb192f6d6f227d55cef9d55c
       $(".gotop").css({ transform: "scale(1)" });
     } else {
       $(".header").css({ "box-shadow": "none"});

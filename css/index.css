@@ -68,7 +68,7 @@ ul li i {
   height: 150px;
   overflow-y: hidden;
   margin: auto;
-  color: #666;
+  color: #fff;
 }
 
 a {
@@ -86,7 +86,7 @@ a {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--primary-color);
+  background: #666;
   border-radius: 10px;
 }
 
@@ -177,12 +177,11 @@ header {
 
 /* MAIN */
 section {
-  height: 100vh;
+  height: 70vh;
   color: #666;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-image: url(../assets/img/always-grey.png); */
 }
 
 section > .about,
@@ -199,7 +198,11 @@ section > .about,
   border: none;
   background-repeat: no-repeat;
   background-blend-mode: luminosity;
+  border-bottom-right-radius: 180px;
+  /* border-bottom-left-radius: 120px; */
+  background-image: linear-gradient(to right top, #051937, #222b69, #583798, #9d36bd, #7031b3);
 }
+
 .intro {
   margin: auto;
   height: 100vh;
@@ -210,7 +213,7 @@ section > .about,
   z-index: 2;
   display: flex;
   flex-direction: column;
-  background: url(../assets/img/astronaut.png) no-repeat center center/50%;
+  background: url(../assets/img/undraw_firmware_3fxd.svg) no-repeat center center/contain;
 }
 
 .intro * {
@@ -245,7 +248,7 @@ section > .about,
   font-family: rbt-thin;
   opacity: 0;
   animation: anmText 1s 2s ease-in forwards;
-  color: #555;
+  color: #eee;
 }
 
 @keyframes anmText {
@@ -259,7 +262,7 @@ section > .about,
 
 .intro h1 {
   margin: 0;
-  color: #666;
+  color: #fff;
 }
 
 .intro .name h1 {
@@ -279,7 +282,6 @@ section > .about,
 .intro .pic {
   padding: 12px 10px;
   outline: none;
-  /* background: #00000099; */
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 70%;
@@ -333,7 +335,6 @@ section > .about,
 
 .product {
   display: flex;
-  /* justify-content: center; */
   flex-direction: column;
   align-items: center;
   border: 1px solid none;
@@ -360,7 +361,6 @@ section > .about,
   height: 200px;
   border: 1px solid var(--primary-border);
   border-radius: var(--radius-1);
-  /* background: #222; */
 }
 
 @keyframes lft {
@@ -408,8 +408,6 @@ footer .footer {
   position: relative;
   display: flex;
   justify-content: center;
-  /* background-color: var(--footer-color); */
-  /* background-color: rgba(0, 0, 255, 0.04); */
 }
 
 .footer .title strong {
@@ -541,7 +539,6 @@ footer .footer {
   }
 
   .intro {
-    /* background: red; */
     padding-left: 70px;
   }
 
@@ -557,7 +554,6 @@ footer .footer {
   section:nth-child(odd) {
     padding: 10px;
     background-size: 300px;
-    /* background-position-y: 40%; */
   }
 
   .about {
