@@ -35,7 +35,6 @@ $(document).ready(() => {
   });
 
   $(window).scroll((e) => {
-    return;
     if (scrollY > 60) {
       $(".gotop").css({ transform: "scale(1)" });
     } else {
