@@ -56,7 +56,7 @@ ul li {
 }
 
 ul li i {
-  margin-right: 20px;
+  margin-right: 10px;
   color: var(--primary-color);
 }
 
@@ -504,11 +504,11 @@ footer .footer {
 }
 
 .footer-middle > div {
-  margin: 10px 120px;
+  margin: 10px 70px;
 }
 
 .footer-middle a {
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 /* Responsive */
