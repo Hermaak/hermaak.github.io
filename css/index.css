@@ -104,7 +104,7 @@ header {
   background-color: #fff;
   border-bottom: 1px solid #ccc;
   z-index: 10;
-  box-shadow: 0 2px 2px #ddd;
+  /* box-shadow: 0 2px 2px #ddd; */
 }
 
 .header {
@@ -200,7 +200,8 @@ section > .about,
   background-blend-mode: luminosity;
   border-bottom-right-radius: 180px;
   /* border-bottom-left-radius: 120px; */
-  background-image: linear-gradient(to right top, #051937, #222b69, #583798, #9d36bd, #7031b3);
+  background: linear-gradient(to right top, #051937, #222b69, #583798, #9d36bd, #7031b3);
+  background-color: #7031b3;
 }
 
 .intro {
@@ -683,7 +684,7 @@ form input[type="submit"]:disabled {
   header {
     background-color: #222;
     border-bottom: none;
-    box-shadow: 0 2px 2px #222;
+    /* box-shadow: 0 2px 2px #222; */
   }
 
   footer {
