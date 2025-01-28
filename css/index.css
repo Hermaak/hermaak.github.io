@@ -199,7 +199,6 @@ section > .about,
   background-repeat: no-repeat;
   background-blend-mode: luminosity;
   border-bottom-right-radius: 180px;
-  /* border-bottom-left-radius: 120px; */
   background: linear-gradient(to right top, #051937, #222b69, #583798, #9d36bd, #7031b3);
   background-color: #7031b3;
 }
@@ -511,6 +510,7 @@ footer .footer {
   text-decoration: underline;
 }
 
+/* Responsive */
 @media screen and (max-width: 600px) {
   /* HEADER */
 
@@ -564,7 +564,39 @@ footer .footer {
   .contact-btn {
     width: fit-content;
   }
+
+  .gotop {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto auto 20px auto;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer-bottom {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-middle {
+    flex-direction: column;
+    
+  }
+
+  .footer-middle > div {
+    margin: 10px;
+  }
 }
+
+/* End-responsive */
 
 button {
   width: 40px;
