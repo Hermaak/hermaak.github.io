@@ -6,28 +6,17 @@ const api_url =
     : "http://localhost:8000";
 
 $(document).ready(() => {
+  const sectionHeight = innerHeight * .75;
   $("header nav a:nth-child(1), .arrow").click(() => {
-    $("body, html").animate({ scrollTop: innerHeight + 100 });
+    $("body, html").animate({ scrollTop: sectionHeight  + 100 });
   });
 
   $("header nav a:nth-child(2)").click(() => {
-    $("body, html").animate({ scrollTop: 2 * innerHeight + 100 });
+    $("body, html").animate({ scrollTop: 2 * sectionHeight + 100 });
   });
 
   $("header nav a:nth-child(3)").click(() => {
-    $("body, html").animate({ scrollTop: 3 * innerHeight + 100 });
-  });
-
-  $("header nav a:nth-child(4)").click(() => {
-    $("body, html").animate({ scrollTop: 4 * innerHeight + 100 });
-  });
-
-  $("header nav a:nth-child(5)").click(() => {
-    $("body, html").animate({ scrollTop: 5 * innerHeight + 100 });
-  });
-
-  $("header nav a:nth-child(6)").click(() => {
-    $("body, html").animate({ scrollTop: 6 * innerHeight + 100 });
+    $("body, html").animate({ scrollTop: 3 * sectionHeight + 100 });
   });
 
   $(".gotop").click(() => {

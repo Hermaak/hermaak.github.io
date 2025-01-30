@@ -26,10 +26,10 @@
     },
     {
       "_id": "3",
-      "text": "A oportunidade é perdida pela maioria das pessoas porque ela vem vestida de macacões e se parece com trabalho..",
+      "text": "A oportunidade é perdida pela maioria das pessoas porque ela vem vestida de macacões e se parece com trabalho.",
       "type": "",
       "user": {
-        "name": { "first": "", "last": "Edison" }
+        "name": { "first": "Thomas", "last": "Edison" }
       }
     },
     {
@@ -77,7 +77,7 @@
       "text": "Se andarmos apenas por caminhos já traçados, chegaremos apenas aonde os outros chegaram.",
       "type": "",
       "user": {
-        "name": { "first": "", "last": "Graham Bell" }
+        "name": { "first": "Alexander", "last": "Graham Bell" }
       }
     },
     {
@@ -85,7 +85,7 @@
       "text": "Grandes descobertas e progressos invariavelmente envolvem a cooperação de várias mentes.",
       "type": "",
       "user": {
-        "name": { "first": "", "last": "Graham Bell" }
+        "name": { "first": "Alexander", "last": "Graham Bell" }
       }
     },
     {
@@ -93,7 +93,7 @@
       "text": "A preparação é a chave para todo e qualquer sucesso, antes de mais nada.",
       "type": "",
       "user": {
-        "name": { "first": "", "last": "Graham Bell" }
+        "name": { "first": "Alexander", "last": "Graham Bell" }
       }
     }
   ]

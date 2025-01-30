@@ -17,20 +17,20 @@ const myColor = "#9f34c0";
 facts = getFacts();
 
 let r = Math.round(Math.random() * (facts.all.length - 1));
-$(".intro p").text(facts.all[r].text);
+$(".intro p").html(`<i class="la la-lightbulb"></i> ${facts.all[r].text}`);
 $(".intro p").append(
-  `<br><i class="la la-circle"></i>
-  <tiny style="color: #eee;">
+  `<br>~
+  <tiny style="color: wheat;">
     ${facts.all[r].user.name.first} ${facts.all[r].user.name.last}
   <tiny>`
 );
 
 setInterval(() => {
   r = Math.round(Math.random() * (facts.all.length - 1));
-  $(".intro p").text(facts.all[r].text);
+  $(".intro p").html(`<i class="la la-lightbulb"></i> ${facts.all[r].text}`);
   $(".intro p").append(
-    `<br><i class="la la-circle"></i>
-    <tiny style="color: #eee;">
+    `<br>~
+    <tiny style="color: wheat;">
       ${facts.all[r].user.name.first} ${facts.all[r].user.name.last}
     <tiny>`
   );

@@ -24,6 +24,8 @@
 }
 
 :root {
+  --some-brown: #523407;
+  --some-blue: #2c0752;
   --primary-color: #003366;
   --body-color: #f9f9f9;
   --primary-border: #444;
@@ -61,7 +63,6 @@ ul li i {
 }
 
 .intro p {
-  /* font-size: 14px; */
   line-height: 20px;
   padding: 20px;
   border-radius: 5px;
@@ -69,7 +70,7 @@ ul li i {
   height: 150px;
   overflow-y: hidden;
   margin: auto;
-  color: #fff;
+  color: wheat;
 }
 
 a {
@@ -87,7 +88,7 @@ a {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #666;
+  background: var(--primary-color);
   border-radius: 10px;
 }
 
@@ -178,7 +179,7 @@ header {
 
 /* MAIN */
 section {
-  height: 70vh;
+  height: 75vh;
   color: #666;
   display: flex;
   justify-content: center;
@@ -188,7 +189,7 @@ section {
 section > .about,
 .exp,
 .fak {
-  width: 60%;
+  width: 70%;
   padding: 10px 0;
   position: relative;
 }
@@ -199,9 +200,8 @@ section > .about,
   border: none;
   background-repeat: no-repeat;
   background-blend-mode: luminosity;
-  border-bottom-right-radius: 180px;
-  background: linear-gradient(to right top, #051937, #222b69, #583798, #9d36bd, #7031b3);
-  background-color: #7031b3;
+  background: url(../assets/img/always-grey.png);
+  background-color: var(--some-blue);
 }
 
 .intro {
@@ -214,7 +214,8 @@ section > .about,
   z-index: 2;
   display: flex;
   flex-direction: column;
-  background: url(../assets/img/undraw_firmware_3fxd.svg) no-repeat center center/contain;
+  background: url(../assets/img/undraw_firmware_3fxd.svg) no-repeat center
+    center/contain;
 }
 
 .intro * {
@@ -468,10 +469,11 @@ footer .footer {
 }
 
 .footer-bottom {
+  background-color: #e8e8e8;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #ccc;
 }
 
 .footer-bottom p {
@@ -507,8 +509,11 @@ footer .footer {
   margin: 10px 70px;
 }
 
-.footer-middle a {
-  /* text-decoration: underline; */
+.footer-middle a i {
+  color: wheat;
+  background-color: var(--primary-color);
+  padding: 5px;
+  border-radius: 5px;
 }
 
 /* Responsive */
@@ -589,7 +594,6 @@ footer .footer {
 
   .footer-middle {
     flex-direction: column;
-    
   }
 
   .footer-middle > div {
@@ -702,7 +706,7 @@ form input[type="submit"]:disabled {
   }
 
   ::-webkit-scrollbar-thumb {
-    background: #333;
+    background: var(--primary-color);
   }
 
   a {
@@ -717,7 +721,6 @@ form input[type="submit"]:disabled {
   header {
     background-color: #222;
     border-bottom: none;
-    /* box-shadow: 0 2px 2px #222; */
   }
 
   footer {
@@ -730,7 +733,8 @@ form input[type="submit"]:disabled {
   }
 
   .footer-bottom {
-    border-top: 1px solid #222;
+    background-color: #222;
+    border-top: 1px solid #000;
   }
 
   .gotop {
