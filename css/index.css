@@ -199,9 +199,9 @@ section > .about,
   margin: 0 auto;
   border: none;
   background-repeat: no-repeat;
-  background-blend-mode: luminosity;
   background: url(../assets/img/always-grey.png);
   background-color: var(--some-blue);
+  border-bottom-left-radius: 200px;
 }
 
 .intro {
@@ -214,8 +214,8 @@ section > .about,
   z-index: 2;
   display: flex;
   flex-direction: column;
-  background: url(../assets/img/undraw_firmware_3fxd.svg) no-repeat center
-    center/contain;
+  background: url(../assets/img/intro.svg) no-repeat center
+    75%/contain;
 }
 
 .intro * {

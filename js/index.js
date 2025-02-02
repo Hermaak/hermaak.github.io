@@ -6,9 +6,9 @@ const api_url =
     : "http://localhost:8000";
 
 $(document).ready(() => {
-  const sectionHeight = innerHeight * .75;
+  const sectionHeight = innerHeight * 0.75;
   $("header nav a:nth-child(1), .arrow").click(() => {
-    $("body, html").animate({ scrollTop: sectionHeight  + 100 });
+    $("body, html").animate({ scrollTop: sectionHeight + 100 });
   });
 
   $("header nav a:nth-child(2)").click(() => {
@@ -27,7 +27,7 @@ $(document).ready(() => {
     if (scrollY > 60) {
       $(".gotop").css({ transform: "scale(1)" });
     } else {
-      $(".header").css({ "box-shadow": "none"});
+      $(".header").css({ "box-shadow": "none" });
       $(".gotop").css({ transform: "scale(0)" });
     }
   });
