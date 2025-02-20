@@ -27,6 +27,7 @@
   --some-brown: #523407;
   --some-blue: #2c0752;
   --primary-color: #003366;
+  --primary-color: #8a2be2;
   --body-color: #f9f9f9;
   --primary-border: #444;
   --primary-black: #000;
@@ -106,7 +107,6 @@ header {
   background-color: #fff;
   border-bottom: 1px solid #ccc;
   z-index: 10;
-  /* box-shadow: 0 2px 2px #ddd; */
 }
 
 .header {
@@ -152,25 +152,22 @@ header {
 }
 
 .logo-text span {
-  font-weight: bold;
+  /* font-weight: bold; */
   text-transform: uppercase;
   color: #666;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 .logo-text span:nth-child(2) {
   font-weight: normal;
-  /* font-size: 14px; */
 }
 
 .header nav a {
   margin: 10px 2px;
-  padding: 10px 20px;
-  color: #666;
   color: var(--primary-color);
   box-shadow: 0 0 2px #aaa;
-  border-radius: 5px;
-  /* font-weight: bold; */
+  padding: 5px 20px;
+  border-radius: 2px;
 }
 
 .header nav a i {
@@ -200,7 +197,7 @@ section > .about,
   border: none;
   background-repeat: no-repeat;
   background: url(../assets/img/always-grey.png);
-  background-color: var(--some-blue);
+  background-color: #8a2be2;
   border-bottom-left-radius: 200px;
 }
 
@@ -214,8 +211,7 @@ section > .about,
   z-index: 2;
   display: flex;
   flex-direction: column;
-  background: url(../assets/img/intro.svg) no-repeat center
-    75%/contain;
+  background: url(../assets/img/intro.svg) no-repeat center 75% / contain;
 }
 
 .intro * {
@@ -721,6 +717,10 @@ form input[type="submit"]:disabled {
   header {
     background-color: #222;
     border-bottom: none;
+  }
+
+  .header nav a {
+    box-shadow: 0 0 1px 1px blueviolet;
   }
 
   footer {

@@ -35,6 +35,13 @@ const apps = [
     desc: "Dê visibilidade ao seu empreendimento.",
     show: true,
   },
+  {
+    id: 5,
+    label: "Feedback",
+    img: "feedback.svg",
+    desc: "Melhore a sua organização com o feedback dos seus clientes ou colaboradores.",
+    show: true,
+  },
 ];
 
 let _apps = new String();
@@ -53,7 +60,7 @@ for (const { id, label, img, desc, show } of apps) {
             alt="${label}-logo"
           />
         </figure>
-        <p class="title">${label}</p>
+        <p class="title">${label} <i class="la la-external-link"></i></p>
         <p class="desc">
           ${desc}
         </p>
