@@ -42,6 +42,13 @@ const apps = [
     desc: "Melhore a sua organização com o feedback dos seus clientes ou colaboradores.",
     show: true,
   },
+  {
+    id: 6,
+    label: "House",
+    img: "house.svg",
+    desc: "Encontre residências para comprar ou arendar.",
+    show: true,
+  },
 ];
 
 let _apps = new String();
