@@ -49,6 +49,13 @@ const apps = [
     desc: "Encontre residências para comprar ou arendar.",
     show: true,
   },
+  {
+    id: 7,
+    label: "Lab",
+    img: "flask.svg",
+    desc: "Um laboratório virtual equipado de variados recursos.",
+    show: true,
+  },
 ];
 
 let _apps = new String();
