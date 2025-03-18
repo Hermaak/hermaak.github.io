@@ -329,6 +329,7 @@ section > .about,
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   grid-gap: 40px;
+  margin-bottom: 70px;
 }
 
 .product {
@@ -340,7 +341,8 @@ section > .about,
   border-radius: 10px;
   background-color: #fff;
   height: 320px;
-  border: 1px solid #f8f8f8;
+  border: 1px solid #f2f2f2;
+  border-bottom: 3px solid #eee;
 }
 
 #products .product p.title {
