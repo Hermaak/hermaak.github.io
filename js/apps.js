@@ -54,6 +54,13 @@ const apps = [
     label: "Lab",
     img: "flask.svg",
     desc: "Um laboratório virtual equipado de variados recursos.",
+    show: false,
+  },
+  {
+    id: 8,
+    label: "Quiz",
+    img: "question.svg",
+    desc: "Aprenda jogando, com o nosso quiz de perguntas e respostas de diferentes areas.",
     show: true,
   },
 ];
