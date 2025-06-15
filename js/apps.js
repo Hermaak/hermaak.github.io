@@ -30,7 +30,7 @@ const apps = [
   },
   {
     id: 4,
-    label: "Panel",
+    label: "Billboard",
     img: "tv-solid.svg",
     desc: "Dê visibilidade ao seu empreendimento.",
     show: true,
@@ -61,6 +61,13 @@ const apps = [
     label: "Quiz",
     img: "question.svg",
     desc: "Aprenda jogando, com o nosso quiz de perguntas e respostas de diferentes areas.",
+    show: true,
+  },
+   {
+    id: 9,
+    label: "Remote Switch",
+    img: "remote-switch.svg",
+    desc: "Tenha controle remoto de seus dispositivos.",
     show: true,
   },
 ];

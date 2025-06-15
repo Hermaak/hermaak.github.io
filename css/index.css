@@ -748,4 +748,10 @@ form input[type="submit"]:disabled {
   .gotop {
     box-shadow: 0 0 5px 2px #222;
   }
+
+  .product {
+    background-color: #333;
+    border: 1px solid #444;
+    box-shadow: none;
+  }
 }
