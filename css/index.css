@@ -249,7 +249,7 @@ section > .about,
   font-family: rbt-thin;
   /* opacity: 0; */
   /* animation: anmText 1s 2s ease-in forwards; */
-  color: #ccc;
+  color: #555;
 }
 
 @keyframes anmText {
