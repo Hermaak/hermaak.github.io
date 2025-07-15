@@ -70,6 +70,13 @@ const apps = [
     desc: "Tenha controle remoto de seus dispositivos.",
     show: true,
   },
+  {
+    id: 10,
+    label: "Art",
+    img: "brush.svg",
+    desc: "O limite da criação artistica está apenas na sua imaginação.",
+    show: true,
+  },
 ];
 
 let _apps = new String();

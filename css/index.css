@@ -26,8 +26,9 @@
 :root {
   --some-brown: #523407;
   --some-blue: #2c0752;
+  /* --primary-color: #003366;
+  --primary-color: #8a2be2; */
   --primary-color: #003366;
-  --primary-color: #8a2be2;
   --body-color: #f9f9f9;
   --primary-border: #444;
   --primary-black: #000;
@@ -104,15 +105,13 @@ a {
 header {
   position: sticky;
   top: 0;
-  background-color: var(--body-color);
   background-color: #fff;
-  border-bottom: 1px solid #aaa;
   box-shadow: 0 1px 2px #aaa;
   z-index: 10;
 }
 
 .header {
-  height: 50px;
+  height: 60px;
   display: flex;
   right: 0;
   left: 0;
@@ -168,12 +167,32 @@ header {
   margin: 10px 2px;
   color: var(--primary-color);
   box-shadow: 0 0 2px #aaa;
-  padding: 5px 20px;
-  border-radius: 2px;
+  padding: 7px 20px;
+  border-radius: 5px;
 }
 
 .header nav a i {
   margin-right: 5px;
+}
+
+.header form {
+  flex: 1;
+  margin: 10px 30px;
+  display: flex;
+}
+
+.header #search {
+  padding: 12px 20px 12px 40px;
+  background: url(../assets/img/search.svg) no-repeat 10px center/20px;
+  background-color: #eee;
+  width: 100%;
+  border-radius: 5px;
+}
+
+#search:focus {
+  background-color: #fff;
+  border-color: #ddd;
+  box-shadow: none;
 }
 
 /* MAIN */
@@ -199,7 +218,8 @@ section > .about,
   border: none;
   background-repeat: no-repeat;
   background: url(../assets/img/always-grey.png);
-  background-color: #8a2be2;
+  /* background-color: #8a2be2; */
+  background-color: #003366;
   border-bottom-left-radius: 200px;
   height: 65vh;
 }
@@ -243,12 +263,11 @@ section > .about,
 }
 
 .intro .greetings strong {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 100;
   text-transform: uppercase;
   font-family: rbt-thin;
-  /* opacity: 0; */
-  /* animation: anmText 1s 2s ease-in forwards; */
+  font-weight: normal;
   color: #555;
 }
 
@@ -450,8 +469,8 @@ footer .footer {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   padding: 10px;
   margin: 5px;
   z-index: 2;
@@ -527,6 +546,10 @@ footer .footer {
   .header {
     flex-direction: column;
   }
+
+  .header form {
+  display: none;
+}
 
   .header nav {
     margin-top: 10px;
