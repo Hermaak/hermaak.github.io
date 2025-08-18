@@ -75,6 +75,13 @@ const apps = [
     label: "Art",
     img: "brush.svg",
     desc: "O limite da criação artistica está apenas na sua imaginação.",
+    show: false,
+  },
+  {
+    id: 11,
+    label: "Composer",
+    img: "music-solid.svg",
+    desc: "Crie trilhas sonoras personalizadas.",
     show: true,
   },
 ];

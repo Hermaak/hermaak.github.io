@@ -1,12 +1,21 @@
 //
 // Config.
+const names = ['Advancedtechspace', 'ApexTech']
+const app_title = names[0];
 const api_url =
   window.location.protocol === "https:"
     ? "https://api-master.onrender.com"
     : "http://localhost:8000";
 
+document.querySelector('title').innerText =`${app_title}, Inc.`;
+document.querySelector('.logo-text span').innerText = app_title;
+document.querySelector('.footer-bottom span').innerHTML = `${app_title} &copy; 2024`;
+document.querySelector('.description strong').innerText = `${app_title}, Inc.`;
+
+ 
+
 $(document).ready(() => {
-  const sectionHeight = innerHeight * 0.75;
+  const sectionHeight = innerHeight * 0.45;
   $("header nav a:nth-child(1), .arrow").click(() => {
     $("body, html").animate({ scrollTop: sectionHeight + 100 });
   });
@@ -16,7 +25,7 @@ $(document).ready(() => {
   });
 
   $("header nav a:nth-child(3)").click(() => {
-    $("body, html").animate({ scrollTop: 3 * sectionHeight + 100 });
+    $("body, html").animate({ scrollTop: 6 * sectionHeight + 100 });
   });
 
   $(".gotop").click(() => {
