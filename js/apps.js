@@ -84,6 +84,20 @@ const apps = [
     desc: "Crie trilhas sonoras personalizadas.",
     show: true,
   },
+  {
+    id: 12,
+    label: "Technician",
+    img: "technician.svg",
+    desc: "Encontre técnicos de diferentes áreas.",
+    show: true,
+  },
+  {
+    id: 12,
+    label: "Track",
+    img: "track.svg",
+    desc: "Rastreie seus dispositivos a partir de qualquer ponto.",
+    show: true,
+  },
 ];
 
 let _apps = new String();

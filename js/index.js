@@ -1,18 +1,18 @@
 //
 // Config.
-const names = ['Advancedtechspace', 'ApexTech']
+const names = ["hermaak", "Advancedtechspace", "ApexTech"];
 const app_title = names[0];
 const api_url =
   window.location.protocol === "https:"
     ? "https://api-master.onrender.com"
     : "http://localhost:8000";
 
-document.querySelector('title').innerText =`${app_title}, Inc.`;
-document.querySelector('.logo-text span').innerText = app_title;
-document.querySelector('.footer-bottom span').innerHTML = `${app_title} &copy; 2024`;
-document.querySelector('.description strong').innerText = `${app_title}, Inc.`;
-
- 
+document.querySelector("title").innerText = `${app_title}, Inc.`;
+document.querySelector(".logo-text span").innerText = app_title;
+document.querySelector(
+  ".footer-bottom span"
+).innerHTML = `${app_title} &copy; 2024`;
+document.querySelector(".description strong").innerText = `${app_title}, Inc.`;
 
 $(document).ready(() => {
   const sectionHeight = innerHeight * 0.45;
