@@ -554,8 +554,8 @@ footer .footer {
 @media screen and (max-width: 600px) {
   /* HEADER */
 
-  .header {
-    flex-direction: column;
+  .btn-menu {
+    display: inline-block;
   }
 
   .header form {
@@ -656,11 +656,7 @@ button {
   cursor: pointer;
   transition: all 0.5s ease;
   z-index: 5;
-}
-
-button:hover {
-  background: #000;
-  color: var(--primary-color);
+  cursor: pointer;
 }
 
 button i {
@@ -668,10 +664,6 @@ button i {
 }
 
 /* General */
-button {
-  cursor: pointer;
-}
-
 input,
 button {
   outline: none;

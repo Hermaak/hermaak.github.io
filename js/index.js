@@ -75,3 +75,11 @@ $("#form-subscribe").submit(async (e) => {
   inp.disabled = false;
   sbmt.disabled = false;
 });
+
+
+// let sidemenuShown = false;
+
+// document.querySelector('.btn-menu').addEventListener('click', e => {
+//   document.querySelector('.sidemenu').style.display = !sidemenuShown ? 'block' : 'none';
+//   sidemenuShown = !sidemenuShown;
+// })
