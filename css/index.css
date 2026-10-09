@@ -540,7 +540,7 @@ footer .footer {
 }
 
 .footer-middle > div {
-  margin: 10px 70px;
+  margin: 10px 20px;
 }
 
 .footer-middle a i {
@@ -761,6 +761,7 @@ form input[type="submit"]:disabled {
 
   .footer-middle {
     background-color: #222;
+    background-color: red;
   }
 
   .footer-bottom {
