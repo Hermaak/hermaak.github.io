@@ -1,11 +1,6 @@
 @font-face {
-  src: url(../assets/fonts/MontserratAlternates-Regular.ttf);
-  font-family: mserrat_a_r;
-}
-
-@font-face {
-  src: url(../assets/fonts/Montserrat-Regular.otf);
-  font-family: mserrat_r;
+  src: url(../assets/fonts/Lato-Light.ttf);
+  font-family: lato;
 }
 
 @font-face {
@@ -30,7 +25,7 @@
   --body-color: #f1f1f1;
   --primary-border: #444;
   --primary-black: #000;
-  --main-font: rbt-thin;
+  --main-font: lato;
   --footer-color: #eee;
 }
 
