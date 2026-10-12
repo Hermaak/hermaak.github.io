@@ -20,7 +20,7 @@ let r = Math.round(Math.random() * (facts.all.length - 1));
 $(".intro p").html(`<i class="la la-lightbulb"></i> ${facts.all[r].text}`);
 $(".intro p").append(
   `<br>
-  <tiny style="color: #ff0051;">~
+  <tiny>~
     ${facts.all[r].user.name.first} ${facts.all[r].user.name.last}
   <tiny>`
 );
@@ -30,7 +30,7 @@ setInterval(() => {
   $(".intro p").html(`<i class="la la-lightbulb"></i> ${facts.all[r].text}`);
   $(".intro p").append(
     `<br>
-    <tiny style="color: #ff0051;">~
+    <tiny>~
       ${facts.all[r].user.name.first} ${facts.all[r].user.name.last}
     <tiny>`
   );
