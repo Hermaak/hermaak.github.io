@@ -8,10 +8,10 @@ const apps = [
     show: true,
   },
   {
-    id: 5,
-    label: "Savings",
-    img: "feedback.svg",
-    desc: "Melhore a sua organização com o feedback dos seus clientes ou colaboradores.",
+    id: 7,
+    label: "Kapital",
+    img: "money-check-alt-solid.svg",
+    desc: "Faça uma gestão inteligente do seu capital.",
     show: true,
   },
   {
@@ -20,7 +20,8 @@ const apps = [
     img: "house.svg",
     desc: "Encontre residências para comprar ou arendar.",
     show: true,
-  }
+  },
+
 ];
 
 let _apps = new String();
